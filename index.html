@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZonfelFoods | Bienvenidos</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/styles-P3.css">
+  <style>
+    /* Reset básico */
+    /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+     */
+  </style>
+</head>
+
+<body>
+  <!-- HERO SECTION -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <!-- <a href="#" class="navbar__logo"><img src="./img/logo-Zon.png" alt="Logo de la empresa"></a> -->
+      <a href="#" class="navbar__logo">Corporación ZONFEL</a>
+
+      <button class="navbar__toggle">☰</button>
+
+      <div class="navbar__menu">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#inicio" class="navbar__link">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#servicios" class="navbar__link">Servicios</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#nosotros" class="navbar__link">Nosotros</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contacto" class="navbar__link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero">
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="hero__title animated-text">Corporación Zonfel</h1>
+        <p class="hero__subtitle animated-text">
+          Traemos productos para el hogar y la oficina, con la mejor calidad y al mejor precio.
+        </p>
+        <p class="animated-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae consequatur
+          dolorem commodi, quasi nam
+          at tempora eaque, explicabo nesciunt eum quae animi numquam dolores delectus quibusdam vitae omnis recusandae
+          voluptates.</p>
+        <a href="#contacto" class="hero__button">Solicitar Cotización</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICIOS SECTION - Para mostrar escalabilidad -->
+  <!-- <section class="services" id="servicios">
+    <div class="services__container">
+      <h2 class="services__title">Nuestros Servicios</h2>
+
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">💻</div>
+          <h3 class="service-card__title">Desarrollo Web</h3>
+          <p class="service-card__text">
+            Sitios web responsivos y modernos adaptados a tus necesidades
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">🎨</div>
+          <h3 class="service-card__title">Diseño UI/UX</h3>
+          <p class="service-card__text">
+            Interfaces atractivas y fáciles de usar para tus usuarios
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">📱</div>
+          <h3 class="service-card__title">Apps Móviles</h3>
+          <p class="service-card__text">
+            Aplicaciones móviles que conectan con tu audiencia
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- SECTION NOSOTROS -->
+  <section class="about" role="region" aria-labelledby="about-title">
+    <div class="about__container">
+      <header class="about__header">
+        <h2 id="about-title" class="about__title">
+          Comprometidos con la Calidad Superior en cada Grano y Cereal de
+          Origen,
+          Garantizando Productos Excepcionales que Enriquecen tu Bienestar y tu Paladar.
+        </h2>
+        <p class="about__subtitle">
+          We are eager to satisfy the needs of our demanding clients.
+        </p>
+      </header>
+
+      <div class="about__content ">
+        <article class="about__card service-card">
+          <header class="about__card-header">
+            <h3 class="about__card-title">
+              <span>Why Choose Us</span>
+            </h3>
+          </header>
+          <p class="about__card-text">
+            Reliability - Quality - Competitive Price. Our international exposure together with our local/Peruvian roots
+            makes us an ideal partner to our international clients. We provide products from the field to your table!
+          </p>
+        </article>
+
+        <article class="about__card service-card">
+          <header class="about__card-header">
+            <h3 class="about__card-title">
+              <span>Our Mission</span>
+            </h3>
+          </header>
+          <p class="about__card-text">
+            We believe in providing to the world the tremendous health benefits of a vast number of products grown and
+            produced in Perú while triggering the development of the local communities we work with.
+          </p>
+        </article>
+
+        <article class="about__card service-card">
+          <header class="about__card-header">
+            <h3 class="about__card-title">
+              <span>What We Do</span>
+            </h3>
+          </header>
+          <p class="about__card-text">
+            From bulk to processed and packaged products, Agrofinos capabilities extend to pretty much all of our
+            clients needs. We are passionate about placing Peru's premium products in tables all over the world.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <section class="products">
+    <div class="products__container">
+      <header class="products__header">
+        <h2 class="products__title">Nuestros Productos</h2>
+        <p class="products__description">
+          ZONFEL: Cosecha Peruana, Sabor Global - Calidad en Granos y Cereales de Origen.
+        </p>
+      </header>
+
+      <div class="products__filters">
+        <button class="filter-btn filter-btn--active" data-filter="show all">Show All</button>
+        <button class="filter-btn" data-filter="ancient">Ancient Grains</button>
+        <button class="filter-btn" data-filter="dry">Dry Fruits</button>
+        <button class="filter-btn" data-filter="processed">Processed</button>
+      </div>
+
+      <div class="products__grid">
+        <!-- Fila 1 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=300&fit=crop&crop=center"
+              alt="Amaranth grains">
+          </div>
+          <h3 class="product-card__name">Amaranth</h3>
+          <span class="product-card__category product-card__category--ancient">Ancient Grains</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop&crop=center"
+              alt="Dried banana chips">
+          </div>
+          <h3 class="product-card__name">Banana</h3>
+          <span class="product-card__category product-card__category--dry">Dry Fruits</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1508747703725-719777637510?w=300&h=300&fit=crop&crop=center"
+              alt="Brazil nuts">
+          </div>
+          <h3 class="product-card__name">Brazil Nut</h3>
+          <span class="product-card__category product-card__category--dry">Dry Fruits</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&crop=center"
+              alt="Cacao powder">
+          </div>
+          <h3 class="product-card__name">Cacao</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <!-- Fila 2 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1606207084390-8f3fa7b5e5e3?w=300&h=300&fit=crop&crop=center"
+              alt="Cacao butter">
+          </div>
+          <h3 class="product-card__name">Cacao butter</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop&crop=center"
+              alt="Cacao nibs">
+          </div>
+          <h3 class="product-card__name">Cacao nibs</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&crop=center"
+              alt="Cacao sweet nibs">
+          </div>
+          <h3 class="product-card__name">Cacao sweet nibs</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=300&h=300&fit=crop&crop=center"
+              alt="Carihua seeds">
+          </div>
+          <h3 class="product-card__name">Carihua</h3>
+          <span class="product-card__category product-card__category--ancient">Ancient Grains</span>
+        </article>
+
+        <!-- Fila 3 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1553164738-c14e90c9b315?w=300&h=300&fit=crop&crop=center"
+              alt="Chia seeds">
+          </div>
+          <h3 class="product-card__name">Chia</h3>
+          <span class="product-card__category product-card__category--ancient">Ancient Grains</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1577003833619-76bbd7f82948?w=300&h=300&fit=crop&crop=center"
+              alt="Golden berries">
+          </div>
+          <h3 class="product-card__name">Goldenberries</h3>
+          <span class="product-card__category product-card__category--dry">Dry Fruits</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0c62e3d9d82?w=300&h=300&fit=crop&crop=center"
+              alt="Maca powder">
+          </div>
+          <h3 class="product-card__name">Maca Powder</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1605522324635-836d1b87a82a?w=300&h=300&fit=crop&crop=center"
+              alt="Dried mango">
+          </div>
+          <h3 class="product-card__name">Mango</h3>
+          <span class="product-card__category product-card__category--dry">Dry Fruits</span>
+        </article>
+
+        <!-- Fila 4 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=300&fit=crop&crop=center"
+              alt="Quinoa grains">
+          </div>
+          <h3 class="product-card__name">Quinoa</h3>
+          <span class="product-card__category product-card__category--ancient">Ancient Grains</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1609501676725-7186f68e9a22?w=300&h=300&fit=crop&crop=center"
+              alt="Sacha inchi nuts">
+          </div>
+          <h3 class="product-card__name">Sacha Inchi</h3>
+          <span class="product-card__category product-card__category--dry">Dry Fruits</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1607672632458-9eb56696346b?w=300&h=300&fit=crop&crop=center"
+              alt="Lucuma powder">
+          </div>
+          <h3 class="product-card__name">Lucuma</h3>
+          <span class="product-card__category product-card__category--processed">Processed</span>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300&h=300&fit=crop&crop=center"
+              alt="Purple corn">
+          </div>
+          <h3 class="product-card__name">Purple Corn</h3>
+          <span class="product-card__category product-card__category--ancient">Ancient Grains</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // JavaScript simple y directo
+    class SimpleNavbar {
+      constructor() {
+        this.toggle = document.querySelector('.navbar__toggle');
+        this.menu = document.querySelector('.navbar__menu');
+        this.links = document.querySelectorAll('.navbar__link');
+
+        this.init();
+      }
+
+      init() {
+        // Toggle del menú
+        this.toggle.addEventListener('click', () => {
+          this.menu.classList.toggle('navbar__menu--active');
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        this.links.forEach(link => {
+          link.addEventListener('click', () => {
+            this.menu.classList.remove('navbar__menu--active');
+          });
+        });
+
+        // Scroll suave
+        this.setupSmoothScroll();
+      }
+
+      setupSmoothScroll() {
+        this.links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+
+            if (href.startsWith('#')) {
+              e.preventDefault();
+              const target = document.querySelector(href);
+
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }
+            }
+          });
+        });
+      }
+    }
+
+    // Animación simple para las tarjetas de servicio
+    // class ServiceCards {
+    //   constructor() {
+    //     this.cards = document.querySelectorAll('.service-card');
+    //     this.init();
+    //   }
+
+    //   init() {
+    //     // Observer para animar cuando aparecen en pantalla
+    //     const observer = new IntersectionObserver((entries) => {
+    //       entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //           entry.target.style.opacity = '1';
+    //           entry.target.style.transform = 'translateY(0)';
+    //         }
+    //       });
+    //     });
+
+    //     // Preparar animación
+    //     this.cards.forEach(card => {
+    //       card.style.opacity = '0';
+    //       card.style.transform = 'translateY(20px)';
+    //       card.style.transition = 'all 0.6s ease';
+
+    //       observer.observe(card);
+    //     });
+    //   }
+    // }
+    class ServiceCards {
+      constructor() {
+        this.cards = document.querySelectorAll('.service-card');
+        this.init();
+      }
+
+      init() {
+        // Observer para animar cuando aparecen en pantalla
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Solo animar si la tarjeta aún no está visible
+              if (entry.target.style.opacity === '0') {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                // Opcional: desconectar el observer una vez que la tarjeta es visible
+                // observer.unobserve(entry.target);
+              }
+            }
+          });
+        }, {
+          // Ajusta este umbral si necesitas que la animación se dispare antes o después
+          // 0.1 significa que la animación se dispara cuando el 10% del elemento es visible
+          threshold: 0.2
+        });
+
+        // Preparar animación y observar
+        this.cards.forEach((card, index) => { // Agregamos 'index' para el retardo
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)'; // Puedes cambiar esto a translateX(20px) si quieres un efecto vertical, pero el translateY es común para "subir"
+          // Calcula un retardo basado en el índice de la tarjeta
+          // Por ejemplo, 0.2s * índice (0, 1, 2...)
+          card.style.transition = `all 0.6s ease ${index * 0.1}s`; // <--- ¡CAMBIO CLAVE AQUÍ!
+          observer.observe(card);
+        });
+      }
+    }
+
+    // Filtro productos
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    // filterBtns.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   console.log('click');
+    // });
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        // Eliminar clase activa de todos los botones
+        filterBtns.forEach(b => b.classList.remove('filter-btn--active'));
+        // Agregar clase activa al botón clickeado
+        this.classList.add('filter-btn--active');
+
+        // --- CAMBIA ESTA LÍNEA ---
+        const filterValue = this.dataset.filter.toLowerCase(); // Obtener valor de data-filter
+
+        productCards.forEach(card => {
+          const category = card.querySelector('.product-card__category').textContent.toLowerCase();
+
+          // --- CAMBIA ESTA LÍNEA (elimina el replace) ---
+          if (filterValue === 'show all' || category.includes(filterValue)) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.6s ease-out';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    /**
+   * Constructor reutilizable para efectos de aparición de texto.
+   * @param {string} selector - Selector CSS del contenedor del texto.
+   * @param {Object} options - Opciones de animación.
+   */
+    class TextAnimator {
+      constructor(selector, options = {}) {
+        // Selecciona TODOS los elementos que coincidan
+        this.elements = document.querySelectorAll(selector);
+
+        // Configuración predeterminada
+        const defaults = {
+          effect: 'fade',
+          duration: 1000,
+          delay: 100,
+          stagger: true,
+          repeat: false,
+          startDelay: 0 // Retraso inicial para cada elemento
+        };
+
+        this.options = { ...defaults, ...options };
+        this.init(); // Inicializar animación
+      }
+
+      init() {
+        this.elements.forEach((element, index) => {
+          // Retraso escalonado entre elementos (opcional)
+          const delay = this.options.startDelay + (index * this.options.delay * 2);
+
+          setTimeout(() => {
+            this.animateElement(element);
+          }, delay);
+        });
+      }
+
+      animateElement(element) {
+        const text = element.textContent;
+        element.style.opacity = '1';
+        element.textContent = '';
+
+        switch (this.options.effect) {
+          case 'typewriter':
+            this.typewriterEffect(element, text);
+            break;
+          case 'scale':
+            this.scaleEffect(element);
+            break;
+          default:
+            this.fadeEffect(element, text);
+        }
+      }
+
+      // Métodos de efecto (adaptados para un elemento individual)
+      typewriterEffect(element, text) {
+        let i = 0;
+        const speed = this.options.delay;
+
+        const type = () => {
+          if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          } else if (this.options.repeat) {
+            setTimeout(() => {
+              element.textContent = '';
+              i = 0;
+              type();
+            }, 2000);
+          }
+        };
+
+        type();
+      }
+
+      fadeEffect(element, text) {
+        let delay = 0;
+        const letters = text.split('');
+
+        letters.forEach((char) => {
+          const span = document.createElement('span');
+          span.textContent = char;
+          span.style.opacity = '0';
+          span.style.transition = `opacity ${this.options.duration}ms ease ${delay}ms`;
+          element.appendChild(span);
+
+          setTimeout(() => {
+            span.style.opacity = '1';
+          }, delay);
+
+          if (this.options.stagger) {
+            delay += this.options.delay;
+          }
+        });
+      }
+
+      scaleEffect(element) {
+        element.style.display = 'inline-block';
+        element.style.transform = 'scale(0.5)';
+        element.style.transition = `all ${this.options.duration}ms ease`;
+
+        setTimeout(() => {
+          element.style.opacity = '1';
+          element.style.transform = 'scale(1)';
+        }, 50);
+      }
+    }
+    const animator = new TextAnimator('.animated-text', {
+      effect: 'fade', // 'typewriter', 'scale'
+      duration: 1000,
+      delay: 5,
+      stagger: true,
+      startDelay: 100 // Retraso inicial para el primer elemento
+    });
+
+    // Inicializar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      new SimpleNavbar();
+      new ServiceCards();
+    });
+  </script>
+  <!-- <script src="./app.js"></script> -->
+</body>
+
+</html>
